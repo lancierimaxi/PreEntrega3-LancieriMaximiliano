@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav img{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    margin-left: 10px;
+  }
+
+  .textCenter{
+    text-align: center;
+  }
+
+  img, picture, video, iframe, figure {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    /* opcional */
+    object-fit: cover;
+    object-position: center center; }
+  
+  /* Reseteamos los enlaces para funcionar como cajas... */
+  a {
+    display: block; }
+  
+  /* Excepto las que se encuentran dentro de párrafos... */
+  p a {
+    display: inline; }
+  
+  /* Quitamos los puntos de los <li> */
+  li {
+    list-style-type: none; }
+  
+  /* Configuramos anclas suaves */
+  html {
+    scroll-behavior: smooth; }
+  
+  /* Desactivamos estilos por defecto de las principales etiquetas de texto */
+  h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit; }
+  
+  /* Evitamos problemas con los pseudoelementos de quotes */
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+  
+  /* Configuramos el texto que seleccionamos */
+  ::selection {
+    background-color: var(--color-primario);
+    color: var(--color-secundario); }
+  
+  /* Nivelamos problemas de tipografías y colocación de formularios */
+  form, input, textarea, select, button, label {
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color: inherit;
+    /* Opcional */
+    appearance: none; }
+  
+  /* Reseteamos las tablas */
+  table, tr, td {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  
+  /* Evitamos problemas con lis SVG */
+  svg {
+    width: 100%;
+    display: block;
+    fill: currentColor; }
+  
+  /* Configuramos la tipografía para toda la web */
+  body {
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: var(--tipo-principal);
+    color: var(--color-primario);
+    background-color: var(--color-secundario);
+    /* Opcional */
+    line-height: 1.4em;
+    hyphens: auto;
+    /*Pendiente*/
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  
+    div .carousel-inner{
+      width: 100%;
+      height:calc(100vh - 86px)
+    }
+    div .carousel-inner img{
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  .darkMode {
+    color: var(--color-secundario);
+    background-color: var(--color-primario); }
+  
+  .title {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    }
+  
+    tr{
+      color: #f0f0f0;
+    }
+    .card-body{
+      color: rgb(247, 247, 247);
+      background-color: #181818;
+      text-align: center;
+    }
+    .card{
+      background-color: #35333f;
+      color: #f0f0f0;
+    }
+    
+  .padding--margin {
+    padding: 2rem;
+    margin: 3rem; }
+  
+  .padding--margin {
+    padding: 2rem;
+    margin: 3rem; }
+  
+  .barra {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100; }
+  
+  .padding--margin {
+    padding: 2rem;
+    margin: 3rem; }
+  
+  .hero {
+    background-color: red; }
+  
+  .padding--margin {
+    padding: 2rem;
+    margin: 3rem; }
+  
+  .padding--margin {
+    padding: 2rem;
+    margin: 3rem; }
+  
+  .padding--margin {
+    padding: 2rem;
+    margin: 3rem; }
+  
+  .espacio {
+    margin: 2rem 0 1rem 0; }
+  
+  #botonDatosCareers {
+    margin: 1rem 0; }
+  
+  .padding--margin {
+    padding: 2rem;
+    margin: 3rem; }
+  
+  .padding--margin {
+    padding: 2rem;
+    margin: 3rem; }
+  
+  .padding--margin {
+    padding: 2rem;
+    margin: 3rem; }
+  
+  .padding--margin {
+    padding: 2rem;
+    margin: 3rem; }
+  
+  .padding--margin {
+    padding: 2rem;
+    margin: 3rem; }
+  
+  .padding {
+    padding: 2rem; }
+  
+  .pie-flex {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    text-align: center; }
+  
+  .pie-flex img {
+    margin: 0.2rem;
+    width: 2.5rem; }
+
+  .item {
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .item-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .item-image {
+    height: 300px;
+    width: 100%;
+  }
+  
+  .item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px 15px;
+  }
+  
+  .item-details > .item-price {
+    margin: 0;
+  }
+  
+  /* ? SHOPPING CART */
+  .shopping-cart-items {
+    padding: 20px 0px;
+  }
+  
+  .shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+  }
+  
+  .shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+  }
+  
+  .shopping-cart-total {
+    min-height: 96px;
+  }
+  
+  .space{
+    justify-content: space-between;
+  }
+
+  footer{ 
+    padding-bottom: 0.1px;
+  }
+
+  .footerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .brand{
+    font-weight: 500;
+    font-size: 40px;
+  }
+
+  .socialMedia{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .socialMediaIcon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    color: #000;
+  }
+
+  .socialMediaIcon i{
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+  .line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 60px ;
+  }

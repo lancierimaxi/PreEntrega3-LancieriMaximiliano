@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB-Sneakers</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-------------------------------INICIO NAV-------------------------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <img src="./img/logo.png" alt="Logo SB-Sneakers">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">SB-Sneakers</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#ingresar">INGRESAR</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MARCAS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#adidas">ADIDAS</a></li>
+                  <li><a class="dropdown-item" href="#newbalance">NEW BALANCE</a></li>
+                  <li><a class="dropdown-item" href="#nike">NIKE</a></li>
+                  <li><a class="dropdown-item" href="#puma">PUMA</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#carrito">CARRITO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!------------------------------------- FIN NAV --------------------------------->
+    <!--------------------------------INICIO CARROUSEL------------------------------->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/nikecarrrousel.webp" class="d-block w-100" alt="Foto Zapatillas Nike">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/pumacarrosel.jpg" class="d-block w-100" alt="Foto Marca Puma en colaboracion con Pokemon">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/newbalancecarrouse.jpg" class="d-block w-100" alt="Zapatillas New Balance">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>  
+    <!-----------------------------------FIN CARROUSEL------------------------------->
+    <!-----------------------------------INICIO INGRESAR------------------------------>
+    <div class="title">
+        <h2 id="ingresar"> INGRESAR </h2>
+    </div>
+    <section class="padding--margin" id="lista-usuarios">
+        <form id="formLogIn">
+            <div class="form-group">
+                <label for="inputAddress">Nombre de Usuario: </label>
+                <input type="text" class="form-control" id="nombreLogIn" placeholder="Introduzca el nombre de usuario">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email: </label>
+                    <input type="email" class="form-control" id="correoLogIn"
+                        placeholder="Introduzca su correo electrónico">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password: </label>
+                    <input type="password" class="form-control" id="contraseniaLogIn"
+                        placeholder="Introduzca la contraseña">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+        <p id="resumenLogIn"></p>
+    </section>
+    <!-----------------------------------FIN INGRESAR------------------------------>
+    <!----------------------------------INICIO TIENDA------------------------------->
+    <section class="store">
+    <section>
+    <h2 id="adidas" class="textCenter">ADIDAS</h2>
+    <div class="container">
+        <div class="items">
+            <div class="row">
+    <div class="col-12 col-md-6">
+        <div class="item shadow mb-4">
+            <h3 class="item-title">Adidas - Streetcheck Court Low</h3>
+            <img class="item-image" src="./img/adidas1.webp">
+
+            <div class="item-details">
+                <h4 class="item-price">$31.999</h4>
+                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="item shadow mb-4">
+            <h3 class="item-title"> Adidas - Response</h3>
+
+            <img class="item-image" src="./img/adidas2.webp">
+
+            <div class="item-details">
+                <h4 class="item-price">$41.999</h4>
+                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <section>
+    <h2 id="newbalance" class="textCenter">NEW BALANCE</h2>
+    <div class="container">
+        <div class="items">
+            <div class="row">
+    <div class="col-12 col-md-6">
+        <div class="item shadow mb-4">
+            <h3 class="item-title">New Balance - CM997 Urbana</h3>
+            <img class="item-image" src="./img/Newbalance1.webp">
+
+            <div class="item-details">
+                <h4 class="item-price">$38.790</h4>
+                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="item shadow mb-4">
+            <h3 class="item-title">New Balance - Marisg V3 Running</h3>
+
+            <img class="item-image" src="./img/Newbalance2.webp">
+
+            <div class="item-details">
+                <h4 class="item-price">$30.690</h4>
+                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <section>
+    <h2 id="nike" class="textCenter">NIKE</h2>
+    <div class="container">
+        <div class="items">
+            <div class="row">
+    <div class="col-12 col-md-6">
+        <div class="item shadow mb-4">
+            <h3 class="item-title">Nike Air Presto Prm 0566</h3>
+            <img class="item-image" src="./img/nike1.webp">
+
+            <div class="item-details">
+                <h4 class="item-price">$61.998</h4>
+                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="item shadow mb-4">
+            <h3 class="item-title">Nike Air Max Systm</h3>
+
+            <img class="item-image" src="./img/nike2.webp">
+
+            <div class="item-details">
+                <h4 class="item-price">$51.700</h4>
+                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <section>
+    <h2 id="puma" class="textCenter">PUMA</h2>
+    <div class="container">
+        <div class="items">
+            <div class="row">
+    <div class="col-12 col-md-6">
+        <div class="item shadow mb-4">
+            <h3 class="item-title">PUMA x Pokémon Slipstream Lo Charmander</h3>
+            <img class="item-image" src="./img/puma3.webp">
+
+            <div class="item-details">
+                <h4 class="item-price">$32.314</h4>
+                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="item shadow mb-4">
+            <h3 class="item-title">PUMA x Pokemon Suede Squirtle</h3>
+
+            <img class="item-image" src="./img/puma4.webp">
+
+            <div class="item-details">
+                <h4 class="item-price">$24.999</h4>
+                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    </section>
+    <section class="shopping-cart">
+        <div class="container">
+            <h2 id="carrito" class="text-center">CARRITO</h2>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- ? START SHOPPING CART ITEMS -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+            </div>
+            <!-- ? END SHOPPING CART ITEMS -->
+
+            <!-- START TOTAL -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">$0</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- END TOTAL -->
+
+            <!-- START MODAL COMPRA -->
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!------------------------------------FIN TIENDA--------------------------------->
+    <footer id="contacto">
+        <div class="footerContent">
+            <div>
+                <h3 class="brand">SB-Sneakers</h3>
+            </div>
+            <div class="socialMedia">
+                <a href="https://www.instagram.com/" target="blank" class="socialMediaIcon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="https://www.facebook.com/" target="blank" class="socialMediaIcon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://twitter.com/" target="blank" class="socialMediaIcon">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+<script src="./js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
